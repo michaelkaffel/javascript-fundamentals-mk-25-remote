@@ -34,6 +34,10 @@ body {
       padding: 8rem 2rem;
     }
 
+    .index-card {
+      min-height: 300px;
+    }
+
 
     /* Exercises Main Page */
     .hero-exercises {
