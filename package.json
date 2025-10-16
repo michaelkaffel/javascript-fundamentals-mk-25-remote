@@ -1,0 +1,21 @@
+{
+  "name": "javascript-fundamentals-mk-25",
+  "version": "1.0.0",
+  "description": "A portfolio site for javascript fundamentals course",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --open 'Google Chrome'",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "keywords": [],
+  "author": "Michael Kaffel",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^5.2.3"
+  }
+}

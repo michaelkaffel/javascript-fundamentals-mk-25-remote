@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/theater.css">
+    <title>Fullhouse Theaters</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="./images/mk-logo.svg" width="20">
+                <a class="navbar-brand ms-2" href="#">Fullhouse Productions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#showTimes">Now Playing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="buyTicket()">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-center ">
+        <div class="hero">
+            <div class="hero-title">
+                <h1>Fullhouse Productions</h1>
+                <p class="tagline">Where Every Night Feels Like Opening Night</p>
+            </div>
+        </div>
+
+        <section class="show-info container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="./images/theater-show.png" class="img-fluid p-4">
+                </div>
+
+                <div class="col-12 col-md-6 my-auto">
+                    <h2>Now Playing: <em>“The Clockmaker's Secret”</em></h2>
+                    <p class="show-description mt-5" id="showTimes">
+                        Step into a world of ticking gears and hidden dreams in <strong>The Clockmaker’s Secret</strong>
+                        — a
+                        whimsical,
+                        time-bending tale about love, invention, and the courage to start again.
+                        Set in a steampunk-inspired village, this heartwarming play follows an eccentric inventor who
+                        discovers
+                        that
+                        time can be fixed... but only if you know where to look.
+                    </p>
+                    <h3 class="mt-5">Saturday and Sunday Performances</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Matinee:</strong> 2:00 PM — $3 off all tickets!</li>
+                        <li class="list-group-item"><strong>Evening Show:</strong> 7:30 PM — Full price tickets $20</li>
+                    </ul>
+                    <p class="mt-3">Use our ticket price calculator to find the price of your ticket.</p>
+                    <button type="button" class="btn btn-primary mt-2" onclick="buyTicket()">CHECK TICKET PRICE</button>
+                    <p class="mt-3"><em>Discounts for kids 13 and under and seniors over 65.</em></p>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="js/theater.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

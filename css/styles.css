@@ -1,0 +1,74 @@
+body {
+      font-family: "Inter", sans-serif;
+      background-color: #f8f9fa;
+    }
+    /* Theme colors */
+    :root {
+      --bs-primary: #2e7d32; /* natural green */
+      --bs-warning: #fbc02d; /* golden accent */
+    }
+    .navbar-brand {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  
+
+    /* Index Page */
+    .hero-index {
+      background: linear-gradient(rgba(46,125,50,0.7), rgba(46,125,50,0.7)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 8rem 2rem;
+    }
+
+
+    /* Exercises Main Page */
+    .hero-exercises {
+      background: linear-gradient(rgba(46,125,50,0.7), rgba(46,125,50,0.7)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    /* Styles for exercise pages */
+    .exercise-container {
+            max-width: 700px;
+            margin: 4rem auto;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .h1-exercise,
+        .h2-exercise {
+            color: #2e7d32;
+            font-weight: 600;
+        }
+
+        #output {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #e8f5e9;
+            border-radius: 0.5rem;
+            min-height: 50px;
+            white-space: pre-line;
+        }
+
+    /* Dice Game */
