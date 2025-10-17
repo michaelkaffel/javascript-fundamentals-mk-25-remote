@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css" />
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" />
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+
+    <title>Number Guessing Game</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success" href="index.html">JavaScript Fundamentals</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Exercise Content -->
+    <div class="exercise-container">
+        <h1 class="h1-exercise">🔎 Number Guessing Game</h1>
+
+        <h2 class="h2-exercise">Guess a number between 1-100</h2>
+        <ul>
+            <li>If you enter somethiing other than a number we will let you know.</li>
+            <li>We will give you hints along the way.</li>
+            <li>Don't give up!</li>
+        </ul>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-success btn-lg" onclick="runGame()">Start Game</button>
+        </div>
+
+        <div id="output" class="mt-4 text-success fw-semibold">
+            <!-- JS output will appear here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-5">
+    <p>
+      <i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i>
+      2025 Michael Kaffel |
+      <a href="index.html"><i class="fa-solid fa-house fa-lg" style="color: #1C3424;"></i></a>
+      |
+      <a href="https://github.com/michaelkaffel" target="_blank"><i class="fa-brands fa-github fa-lg"
+          style="color: #1C3424;"></i></a>
+      |
+      <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+    </p>
+  </footer>
+
+    <!-- Script -->
+    <script src="./js/number-guessing-game-2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+

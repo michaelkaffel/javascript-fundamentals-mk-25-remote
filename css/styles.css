@@ -73,6 +73,7 @@ body {
             border-radius: 0.5rem;
             min-height: 50px;
             white-space: pre-line;
+            text-align: center;
         }
 
     /* Dice Game */
