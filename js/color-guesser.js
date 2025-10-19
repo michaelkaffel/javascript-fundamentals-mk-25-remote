@@ -43,6 +43,8 @@ const COLORS_ARRAY = [
         const output = document.getElementById("output");
         output.textContent = `You guessed the correct color!\n\nIt was ${target}!\n\nIt only took you ${numTries} guesses.`;
         document.body.style.backgroundColor = target;
+        output.style.border = "2px solid";
+        output.style.borderColor = target;
       }
 
       function checkGuess(guess, target) {
