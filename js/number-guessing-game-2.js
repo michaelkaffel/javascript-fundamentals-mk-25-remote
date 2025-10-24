@@ -16,7 +16,7 @@ function runGame() {
         //increment number of tries
         numTries++;
         //snarcky comment
-        if (numTries === 4) alert('X tries already, you arent very good at this...');
+        if (numTries === 4) alert('4 tries already, you arent very good at this...');
         //check for correctness
         correct = guessChecker(guessNumber, target);
         //will stay in loop so long as correct is not true, the ! flips it
@@ -24,7 +24,7 @@ function runGame() {
     
     alert(`Success`)
     const output = document.getElementById('output');
-    output.textContent = `🎉 Congradulations 🎉\n\nYou guessed the correct number: ${target}\n\nIt only took you ${numTries} tries which isnt bad, i guess... Try again?`
+    output.textContent = `🎉 Congratulations 🎉\n\nYou guessed the correct number: ${target}\n\nIt only took you ${numTries} tries which isnt bad, i guess... Try again?`
 
 }
 
