@@ -1,7 +1,11 @@
-const instrument = {
-    type: "string",
-    name: "ukulele"
-};
-
-console.log(instrument["name"]);
-console.log(instrument.name);
+class Car {
+    constructor(make, model, year, gas = false) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.gas = gas; 
+    }
+    fillUp () {
+            this.gas = true;
+        }
+}
