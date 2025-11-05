@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+a.
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test
-        
-    </title>
-</head>
-<body>
-    
+<body onload="doSomething()">
+    <img src="cat.png" alt="A cat" />
+    <script>
+        function doSomething() {
+            const theImg = document.getElementsByTagName('img')[0];
+            document.body.appendChild(theImg.cloneNode());
+            document.body.appendChild(theImg.cloneNode());
+            document.body.removeChild(document.body.lastElementChild);
+        }
+    </script>
 </body>
 </html>

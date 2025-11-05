@@ -1,84 +1,130 @@
 body {
-      font-family: "Inter", sans-serif;
-      background-color: #f8f9fa;
-    }
-    /* Theme colors */
-    :root {
-      --bs-primary: #2e7d32; /* natural green */
-      --bs-warning: #fbc02d; /* golden accent */
-    }
-    .navbar-brand {
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-    
-    .card {
-      border: none;
-      border-radius: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-  
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fa;
+}
 
-    /* Index Page */
-    .hero-index {
-      background: linear-gradient(rgba(46,125,50,0.7), rgba(46,125,50,0.7)),
-        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 8rem 2rem;
-    }
+/* Theme colors */
+:root {
+  --bs-primary: #2e7d32;
+  /* natural green */
+  --bs-warning: #fbc02d;
+  /* golden accent */
+}
 
-    .index-card {
-      min-height: 300px;
-    }
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
 
 
-    /* Exercises Main Page */
-    .hero-exercises {
-      background: linear-gradient(rgba(46,125,50,0.7), rgba(46,125,50,0.7)),
-        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 6rem 2rem;
-    }
+/* Index Page */
+.hero-index {
+  /* background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(46, 125, 50, 0.7)),
+    url(../images/JS-home-hero.png); */
+  background-image: url(../images/JS-home-hero.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+}
 
-    /* Styles for exercise pages */
-    .exercise-container {
-            max-width: 700px;
-            margin: 4rem auto;
-            background: #fff;
-            border-radius: 1rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-        }
+.index-card {
+  min-height: 300px;
+}
 
-        .h1-exercise,
-        .h2-exercise {
-            color: #2e7d32;
-            font-weight: 600;
-        }
 
-        #output {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background-color: #e8f5e9;
-            border-radius: 0.5rem;
-            min-height: 50px;
-            white-space: pre-line;
-            text-align: center;
-        }
+/* Exercises Main Page */
+.hero-exercises {
+  background-image: url(../images/JS-home-hero.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
 
-    /* Color Guess Game */
+/* Styles for exercise pages */
+.exercise-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
 
-    /* .color-guess-colors {
-      background-color: grey;
+.h1-exercise,
+.h2-exercise {
+  color: #2e7d32;
+  font-weight: 600;
+}
 
-    } */
+#output {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  border-radius: 0.5rem;
+  min-height: 50px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+/* Random color generator */
+
+#output-color-generator {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  min-height: 50px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+#container {
+  background-color: rgb(232, 228, 228);
+  border-radius: 10px;
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+/* Spot the difference smile game */
+
+div.game {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: solid black 1px;
+}
+
+div.game>img {
+  position: absolute;
+}
+
+/* #rightSide {
+            left: 500px;
+            border-left: 1px solid;
+        } */
+
+
+.exercise-containerG {
+  max-width: 90%;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}

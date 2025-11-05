@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    
+
+
+    <title>Template</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success" href="#">JavaScript Fundamentals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exercise Content -->
+    <div class="exercise-containerG">
+        <h1 class="h1-exercise">Matching Game</h1>
+
+        <h2 class="h2-exercise">Can you spot the difference?</h2>
+        <p>Click on the extra smiling face in the <strong>box on the left</strong> to progress to the next level.
+
+            Click on anything else and it's <strong>Game Over</strong>.
+        </p>
+        <p>Level: <span id="counter">0</span></p>
+
+        <div class="text-start m-4">
+            <button type="button" id="resetBtn" class="btn btn-success btn-lg">Reset</button>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col mx-auto">
+                    <div class="d-flex">
+                        <div class="game" id="leftSide"></div>
+                        <div class="game" id="rightSide"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-5">
+        <p>
+            <i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i>
+            2025 Michael Kaffel |
+            <a href="index.html"><i class="fa-solid fa-house fa-lg" style="color: #1C3424;"></i></a>
+            |
+            <a href="https://github.com/michaelkaffel" target="_blank"><i class="fa-brands fa-github fa-lg"
+                    style="color: #1C3424;"></i></a>
+            |
+            <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+        </p>
+    </footer>
+
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/matching-game.js">
+       
+
+    </script>
+</body>
+
+</html>
