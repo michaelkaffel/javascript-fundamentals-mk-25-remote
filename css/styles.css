@@ -27,6 +27,11 @@ body {
   transform: translateY(-5px);
 }
 
+footer {
+  height: 20px;
+  margin-bottom: 5px;
+}
+
 
 /* Index Page */
 .hero-index {
@@ -128,3 +133,46 @@ div.game>img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
 }
+
+/* NEWS APP */
+.hero-newsapp {
+  /* background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(46, 125, 50, 0.7)),
+    url(../images/JS-home-hero.png); */
+  background-image: url(../images/news-app-hero.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+  height: 500px;
+}
+
+.h1-newsapp {
+            text-align: center;
+        }
+
+        .news-card {
+
+            margin: 1rem auto;
+            background-color: beige;
+            border-radius: 7px;
+            padding: 1rem;
+        }
+
+        
+
+
+        .news-image {
+            height: 245px;
+        }
+
+        
+
+        .query-input {
+            width: 50%;
+            display: inline;
+        }
+
+        .query-button {
+            display: inline;
+        }

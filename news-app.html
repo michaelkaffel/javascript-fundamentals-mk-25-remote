@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple News App</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-success" href="index.html">JavaScript Fundamentals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-newsapp">
+        <div class="container">
+            <h1 class="display-4 fw-bold pt-5 h1-newsapp">MK News Outlet</h1>
+        </div>
+    </section>
+
+
+    <!-- <div class="my-5 pt-5">
+        <h1 class="mt-5">MK NEWS OUTLET</h1>
+    </div> -->
+    <div class="container">
+        <div class="row">
+        <div class="mt-3 col-12 text-center">
+            <h2>SEARCH FOR NEWS THAT MATTERS TO YOU</h2>
+            <input id="query-input" class="query-input form-control mx-auto" type="text" placeholder=""/>
+            <button type="button" class="btn btn-primary query-button btn-sm ms-3" id="search-btn">SEARCH</button>
+        </div>
+        
+        <button type="button" id="tech-news" class="btn btn-primary col m-4">Technology</button>
+        <button type="button" id="science-news" class="btn btn-primary col m-4">Science</button>
+        <button type="button" id="health-news" class="btn btn-primary col m-4">Health</button>
+        <button type="button" id="top-news" class="btn btn-primary col m-4">Headlines</button>
+
+        </div>
+    </div>
+
+    <div id="news-container" class="container">
+        <div id="news" class="row"></div>
+        <div id="no-results">
+    </div>
+
+     <!-- Footer -->
+
+  <footer class="text-center py-4 bg-light mt-5">
+    <p>
+      <i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i>
+      2025 Michael Kaffel |
+      <a href="index.html"><i class="fa-solid fa-house fa-lg" style="color: #1C3424;"></i></a>
+      |
+      <a href="https://github.com/michaelkaffel" target="_blank"><i class="fa-brands fa-github fa-lg"
+          style="color: #1C3424;"></i></a>
+      |
+      <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+    </p>
+  </footer>
+
+    <script src="./js/news-app.js" type="module"></script>
+</body>
+
+</html>

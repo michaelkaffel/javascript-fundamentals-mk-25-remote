@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html --open 'Google Chrome'",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./",
+    "clean": "rm -rf .parcel-cache dist"
   },
   "keywords": [],
   "author": "Michael Kaffel",
