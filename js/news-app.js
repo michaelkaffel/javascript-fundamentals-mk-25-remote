@@ -1,11 +1,12 @@
 window.addEventListener('load', fetchHeadlineNews)
 
-const apiKey = process.env.NEWS_API_KEY;
+const apiKey = process.env.NEWS_API_KEY_GMAIL;
 const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 const techURL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
 const scienceURL = `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=${apiKey}`;
 const healthURL = `https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=${apiKey}`;
 
+const placeholderImage = new URL('../images/image-placeholder.png', import.meta.url).href;
 
 // Headline button build and headline news fetch
 const topNewsBtn = document.querySelector('#top-news');
@@ -128,12 +129,6 @@ async function fetchQueryNews(queryURL) {
 }
 
 
-
-// get search term from Input
-// assign to a URL
-// insert into the fetch
-
-
 // Build elements from fetched data
 function displayNews(articles) {
     let newsDiv = document.querySelector('#news');
@@ -158,11 +153,25 @@ function displayNews(articles) {
         title.textContent = `${article.title.toUpperCase().slice(0, 60)}...`;
         anchorForImg.href = article.url;
         anchorForImg.target = '_blank';
-        img.src = article.urlToImage;
+        
+
+        if (!article.urlToImage) {
+            img.src = placeholderImage;
+            console.log(placeholderImage)
+
+            console.log('test')
+        } else {
+            img.src = article.urlToImage;
+        }
 
 
+            
+        
+        // article.urlToImage === null
 
-        // console.log(`${article.title}  ${img.src}`)
+        
+
+        console.log(`${article.title}  ${typeof img.src}. ${article.urlToImage === null}`)
         img.alt = `Image from ${article.source.name}`;
         img.classList.add('news-image');
         img.classList.add('card-img-top');
@@ -175,6 +184,8 @@ function displayNews(articles) {
             description.textContent = `Could not load description. Please click link to learn more...`;
 
         }
+
+        
 
         anchor.textContent = 'Read More';
         anchor.href = article.url;
