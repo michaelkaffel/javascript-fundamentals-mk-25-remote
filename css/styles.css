@@ -29,7 +29,7 @@ body {
 
 footer {
   height: 20px;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 
@@ -52,12 +52,12 @@ footer {
 
 /* Exercises Main Page */
 .hero-exercises {
-  background-image: url(../images/JS-home-hero.png);
+  background-image: url(../images/exercise-hero-image.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   color: white;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
 }
 
 /* Styles for exercise pages */
@@ -84,6 +84,25 @@ footer {
   min-height: 50px;
   white-space: pre-line;
   text-align: center;
+  
+}
+
+/* Height Checker */
+#output-wave {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  border-radius: 0.5rem;
+  min-height: 50px;
+  white-space: pre-line;
+  text-align: center;
+  display: none;
+}
+
+.wave-background {
+  background-image: url(../images/wildwaves-hero.png);
+  background-size: cover;
+  padding: 2rem 0;
 }
 
 /* Random color generator */
@@ -148,31 +167,31 @@ div.game>img {
 }
 
 .h1-newsapp {
-            text-align: center;
-        }
+  text-align: center;
+}
 
-        .news-card {
+.news-card {
 
-            margin: 1rem auto;
-            background-color: beige;
-            border-radius: 7px;
-            padding: 1rem;
-        }
-
-        
+  margin: 1rem auto;
+  background-color: beige;
+  border-radius: 7px;
+  padding: 1rem;
+}
 
 
-        .news-image {
-            height: 245px;
-        }
 
-        
 
-        .query-input {
-            width: 50%;
-            display: inline;
-        }
+.news-image {
+  height: 245px;
+}
 
-        .query-button {
-            display: inline;
-        }
+
+
+.query-input {
+  width: 50%;
+  display: inline;
+}
+
+.query-button {
+  display: inline;
+}

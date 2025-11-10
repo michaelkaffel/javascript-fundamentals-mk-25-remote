@@ -44,29 +44,116 @@
         </div>
     </nav>
 
-    <!-- Exercise Content -->
-    <div class="exercise-container">
-        <h1 class="h1-exercise">🌊 Wild Waves Aquatic Park</h1>
+    <div class="wave-background">
 
-        <h2 class="h2-exercise">Height Checker</h2>
-        <p>Welcome to our aquatic part height checker. Please enter your height below and whether you are accompanied by
-            an adult to see which attractions you can ride today. You must be at least this tall to enter specific
-            rides:</p>
-        <ul>
-            <li>The Wave Pool ~ 42 inches </li>
-            <li>The Thunder Waterslide ~ 48 inches (or 42 with adult)</li>
-            <li>The Lazy River ~ 36 inches</li>
-        </ul>
+        <!-- Exercise Content -->
+        <div class="exercise-container">
 
-        <div class="text-center mt-4">
-            <button type="button" class="btn btn-success btn-lg" onclick="buyTicket()">Check your height!</button>
-        </div>
+            <h1 class="h1-exercise text-center">Wild Waves Aquatic Park</h1>
+            <h2 class="h2-exercise text-center mb-3">Height Checker</h2>
 
-        <div id="output" class="mt-4 text-success fw-semibold">
-            <!-- JS output will appear here -->
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6">
+                        <p>Welcome to our aquatic park <strong>height checker</strong>. Enter your height below and
+                            whether
+                            you are
+                            an adult or accompanied by one. Height limits for specific rides below:</p>
+
+                        <ul>
+                            <li><strong>The Lazy River</strong> ~ 36 inches</li>
+                            <li><strong>The Wave Pool</strong> ~ 42 inches </li>
+                            <li><strong>The Thunder Waterslide</strong> ~ 48 inches (or 42 with adult)</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img id="ride-image" class="img-fluid" src="../2-Javascript/images/height-checker.png">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="output-wave" class="mt-4 text-success fw-semibold">
+                    <!-- JS output will appear here -->
+                </div>
+
+                <select id="ride" class="form-select my-3" name="ride">
+                    <option class="text-center" value="">Pick Your Attraction</option>
+                    <option value="river">The Lazy River</option>
+                    <option value="wave">The Wave Pool</option>
+                    <option value="water">The Thunder Waterslide</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="form-select my-3" id="height" name="height">
+                    <option class="text-center" value="">Select Your Height</option>
+                    <option value="36">3'0"</option>
+                    <option value="37">3'1"</option>
+                    <option value="38">3'2"</option>
+                    <option value="39">3'3"</option>
+                    <option value="40">3'4"</option>
+                    <option value="41">3'5"</option>
+                    <option value="42">3'6"</option>
+                    <option value="43">3'7"</option>
+                    <option value="44">3'8"</option>
+                    <option value="45">3'9"</option>
+                    <option value="46">3'10"</option>
+                    <option value="47">3'11"</option>
+                    <option value="48">4'0"</option>
+                    <option value="49">4'1"</option>
+                    <option value="50">4'2"</option>
+                    <option value="51">4'3"</option>
+                    <option value="52">4'4"</option>
+                    <option value="53">4'5"</option>
+                    <option value="54">4'6"</option>
+                    <option value="55">4'7"</option>
+                    <option value="56">4'8"</option>
+                    <option value="57">4'9"</option>
+                    <option value="58">4'10"</option>
+                    <option value="59">4'11"</option>
+                    <option value="60">5'0"</option>
+                    <option value="61">5'1"</option>
+                    <option value="62">5'2"</option>
+                    <option value="63">5'3"</option>
+                    <option value="64">5'4"</option>
+                    <option value="65">5'5"</option>
+                    <option value="66">5'6"</option>
+                    <option value="67">5'7"</option>
+                    <option value="68">5'8"</option>
+                    <option value="69">5'9"</option>
+                    <option value="70">5'10"</option>
+                    <option value="71">5'11"</option>
+                    <option value="72">6'0"</option>
+                    <option value="73">6'1"</option>
+                    <option value="74">6'2"</option>
+                    <option value="75">6'3"</option>
+                    <option value="76">6'4"</option>
+                    <option value="77">6'5"</option>
+                    <option value="78">6'6"</option>
+                    <option value="79">6'7"</option>
+                    <option value="80">6'8"</option>
+                    <option value="81">6'9"</option>
+                    <option value="82">6'10"</option>
+                    <option value="83">6'11"</option>
+                    <option value="84">7'0"</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="form-select" id="adult-or-parent" name="adult-or-parent">
+                    <option value="" class="text-center">Are you an adult or with an adult?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-success btn-lg" id="check-btn">Can you ride the ride?</button>
+            </div>
         </div>
     </div>
-
     <footer class="text-center py-4 bg-light mt-5">
         <p>
             <i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i>
@@ -80,8 +167,9 @@
         </p>
     </footer>
 
-    <script src="./js/wildwaves.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wildwaves.js" type="module"></script>
 
 </body>
 
