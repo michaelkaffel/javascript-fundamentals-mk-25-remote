@@ -24,7 +24,7 @@ rideSelect.addEventListener('change', changeImage);
 checkBtn.addEventListener('click', buyTicket)
 
 function changeImage() {
-    console.log('adding an image')
+    
     const rideImage = document.querySelector('#ride-image');
     switch (rideSelect.value) {
         case 'wave':

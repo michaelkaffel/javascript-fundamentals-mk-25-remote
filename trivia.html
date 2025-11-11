@@ -1,5 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <title>Template</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success" href="#">JavaScript Fundamentals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exercise Content -->
+    <div class="exercise-container">
+        <h1 class="h1-exercise">🎲 Trivia Game</h1>
+
+        <h2 class="h2-exercise">Can you guess the correct answer?</h2>
+
+        <div id="question">Press "Enter" or click "New Question" to start the game</div>
+        <input class="form-control" id="answer" type="text" placeholder="Your answer here">
+        <div class="d-flex space-between">
+            <button class="btn btn-primary mt-2" id="questionBtn">New Question</button>
+            <button class="btn btn-success mt-2 ms-auto" id="answerBtn">Submit Answer</button>
+        </div>
+        
+
+        
+
+        <div id="output" class="mt-4 text-success fw-semibold">
+            <!-- JS output will appear here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light mt-5">
+        <p>
+            <i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i>
+            2025 Michael Kaffel |
+            <a href="index.html"><i class="fa-solid fa-house fa-lg" style="color: #1C3424;"></i></a>
+            |
+            <a href="https://github.com/michaelkaffel" target="_blank"><i class="fa-brands fa-github fa-lg"
+                    style="color: #1C3424;"></i></a>
+            |
+            <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+        </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="./js/questions.js"></script>
+    <script src="./js/trivia.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +102,7 @@
     <button id="questionBtn">New Question</button>
     <button id="answerBtn">Submit Answer</button>
     <div id="feedback"></div>
-    <script src="./js/questions.js"></script> <!-- Link to your JSON data -->
-    <script src="./js/trivia.js"></script> <!-- Link to your JS file -->
+    <script src="./js/questions.js"></script> 
+    <script src="./js/trivia.js"></script> 
 </body>
-</html>
+</html> -->

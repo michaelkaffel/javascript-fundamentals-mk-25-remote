@@ -1,15 +1,15 @@
-console.log('test');
+
 
 const gameBtn = document.querySelector('#game-button');
 const diceImg = document.querySelector('#dice-image');
 const output = document.getElementById('output');
 const rollingDie = new URL('../images/dice-roll.gif', import.meta.url).href;
-const die1 = new URL('../images/dice-1.png', import.meta.url).href;
-const die2 = new URL('../images/dice-2.png', import.meta.url).href;
-const die3 = new URL('../images/dice-3.png', import.meta.url).href;
-const die4 = new URL('../images/dice-4.png', import.meta.url).href;
-const die5 = new URL('../images/dice-5.png', import.meta.url).href;
-const die6 = new URL('../images/dice-6.png', import.meta.url).href;
+const die1 = new URL('/images/dice-1.png', import.meta.url).href;
+const die2 = new URL('/images/dice-2.png', import.meta.url).href;
+const die3 = new URL('/images/dice-3.png', import.meta.url).href;
+const die4 = new URL('/images/dice-4.png', import.meta.url).href;
+const die5 = new URL('/images/dice-5.png', import.meta.url).href;
+const die6 = new URL('/images/dice-6.png', import.meta.url).href;
 
 gameBtn.addEventListener('click', startGame)
 let count = 10;
