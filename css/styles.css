@@ -195,3 +195,12 @@ div.game>img {
 .query-button {
   display: inline;
 }
+
+/* TRIVIA */
+#questionBtn {
+  display: none;
+}
+
+#answerBtn {
+  display: none;
+}

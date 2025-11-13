@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 
 
-    <title>Template</title>
+    <title>Trivia Game</title>
 
 </head>
 
@@ -46,20 +46,65 @@
     </nav>
 
     <!-- Exercise Content -->
-    <div class="exercise-container">
-        <h1 class="h1-exercise">🎲 Trivia Game</h1>
+    <div class="exercise-container ">
+        <h1 class="h1-exercise">🎯 20 Questions Trivia Game</h1>
 
-        <h2 class="h2-exercise">Can you guess the correct answer?</h2>
+        <h2 class="h2-exercise">Pick your difficulty and category</h2>
+        <div class="container">
+            <div class="row">
+                <div class="co-6l">
+                    <label for="category" class="form-label">Select Category:</label>
+                    <select id="category" name="category" class="form-select">
+                        <option value="">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment: Books</option>
+                        <option value="11">Entertainment: Film</option>
+                        <option value="12">Entertainment: Music</option>
+                        <option value="13">Entertainment: Musicals & Theatres</option>
+                        <option value="14">Entertainment: Television</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="16">Entertainment: Board Games</option>
+                        <option value="17">Science & Nature</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                        <option value="29">Entertainment: Comics</option>
+                        <option value="30">Science: Gadgets</option>
+                        <option value="31">Entertainment: Japanese Anime & Manga</option>
+                        <option value="32">Entertainment: Cartoon & Animations</option>
+                    </select>
+                </div>
+                <div class="col mt-2">
+                    <label for="difficulty" class="form-label">Select Difficulty:</label>
+                    <select id="difficulty" name="difficulty" class="form-select">
+                        <option value="">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
-        <div id="question">Press "Enter" or click "New Question" to start the game</div>
-        <input class="form-control" id="answer" type="text" placeholder="Your answer here">
+        <div id="question" class="border border-success my-4 py-1 ps-2 rounded-1">Choose your difficulty and press "Enter" or
+            click "Start Game" to begin.</div>
+        <input class="form-control" id="answer" type="text">
         <div class="d-flex space-between">
             <button class="btn btn-primary mt-2" id="questionBtn">New Question</button>
+            <button class="btn btn-warning mt-2" id="start-game-button">Start Game</button>
             <button class="btn btn-success mt-2 ms-auto" id="answerBtn">Submit Answer</button>
         </div>
-        
 
-        
+
+
 
         <div id="output" class="mt-4 text-success fw-semibold">
             <!-- JS output will appear here -->
@@ -81,7 +126,7 @@
     </footer>
 
     <!-- Script -->
-    <script src="./js/questions.js"></script>
+    <!-- <script src="./js/questions.js"></script> -->
     <script src="./js/trivia.js"></script>
 </body>
 

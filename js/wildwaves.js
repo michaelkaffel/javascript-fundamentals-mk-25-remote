@@ -66,8 +66,7 @@ function buyTicket() {
     } else {
         
         output.textContent = 'You are not tall enough for this ride';
-        output.style.backgroundColor = 'red';
-        output.style.color = 'black';
+        output.style.border = 'red solid 2px';
     }
 }
 
