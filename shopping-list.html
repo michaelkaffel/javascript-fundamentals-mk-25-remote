@@ -23,47 +23,7 @@
     <title>Make A List</title>
 
 
-    <style>
-        #shoppingList {
-            list-style-type: none;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .shopping-list-item {
-            display: flex;
-            justify-content: space-between;
-            background-color: #E46F5A;
-            min-width: 25rem;
-            padding: 1em;
-            margin: 1em;
-            border-radius: 7px;
-            color: #FDF2EF;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-            transition: transform .5s;
-
-
-        }
-
-        .shopping-list-item:hover {
-            background-color: #CC5E4D;
-            transform: translate(0, -5px);
-
-        }
-
-        .close {
-            cursor: pointer;
-        }
-        
-
-    </style>
 </head>
 
 <body>
@@ -87,28 +47,34 @@
     </nav>
 
     <!-- Exercise Content -->
-    <div class="exercise-container">
-        <h1 class="h1-exercise">📋 Make A List!</h1>
+    <div class="exercise-containerSL container">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div>
+                    <h1 class="h1-exercise">📋 Make A List!</h1>
 
-        <h2 class="h2-exercise">Groceries, ToDo's, & Planning</h2>
-        <p>Add items to the list using the button below. Click on an item to DELETE it.</p>
+                    <h2 class="h2-exercise">Groceries, ToDo's, & Planning</h2>
+                    <p>Add items to the list using the button below. Click on an item to DELETE it.</p>
 
-        <form id="myForm" class="d-flex">
+                    <form id="myForm" class="d-flex">
 
-            <input class="form-control" id="item" type="text" name="item" placeholder="Add an item">
-            <button class="btn btn-success ms-3" type="submit">Add</button>
-        </form>
+                        <input class="form-control" id="item" type="text" name="item" placeholder="Add an item">
+                        <button class="btn btn-success ms-3" type="submit">Add</button>
+                    </form>
 
-        <div class="text-center mt-4">
+                    <div class="text-center mt-4">
 
+                    </div>
+
+                    <ul id="shoppingList">
+
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <ul id="shoppingList">
-
-        </ul>
     </div>
 
-   
+
 
     <!-- 
     <h1>Make A List!</h1>

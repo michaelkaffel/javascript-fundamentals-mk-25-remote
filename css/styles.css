@@ -1,6 +1,11 @@
+* {
+  border: red solid 1px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f8f9fa;
+  
 }
 
 /* Theme colors */
@@ -84,7 +89,7 @@ footer {
   min-height: 50px;
   white-space: pre-line;
   text-align: center;
-  
+
 }
 
 /* Height Checker */
@@ -125,32 +130,67 @@ footer {
   margin: 0 auto;
 }
 
-/* Spot the difference smile game */
 
-div.game {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  border: solid black 1px;
+
+
+/* MAKE A LIST */
+
+
+
+
+
+
+#shoppingList {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-div.game>img {
-  position: absolute;
+.shopping-list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E46F5A;
+  min-width: 25rem;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 7px;
+  color: #FDF2EF;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: transform .5s;
+
+
 }
 
-/* #rightSide {
-            left: 500px;
-            border-left: 1px solid;
-        } */
+.shopping-list-item:hover {
+  background-color: #CC5E4D;
+  transform: translate(0, -5px);
 
+}
 
-.exercise-containerG {
-  max-width: 90%;
-  margin: 4rem auto;
+@media (max-width: 700px) {
+  .exercise-containerSL {
+  width: 95vw;
+  margin: 5rem auto;
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+}
+
+ .shopping-list-item {
+  min-width: 75vw;
+ }
+}
+
+.close {
+  cursor: pointer;
 }
 
 /* NEWS APP */
@@ -218,3 +258,35 @@ div.game>img {
   padding: 8rem 2rem;
   height: 500px;
 }
+
+
+
+
+
+/* Spot the difference smile game */
+
+/* div.game {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: solid black 1px;
+}
+
+div.game>img {
+  position: absolute;
+}
+
+#rightSide {
+  left: 500px;
+  border-left: 1px solid;
+}
+
+
+.exercise-containerG {
+  max-width: 90%;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+} */

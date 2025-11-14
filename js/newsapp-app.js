@@ -14,15 +14,15 @@ const topNewsBtn = document.querySelector('#top-news');
 topNewsBtn.addEventListener('click', fetchHeadlineNews);
 
 async function fetchHeadlineNews() {
-    console.log('test headline')
+    // console.log('test headline')
     clearNoResults();
     
     try {
         const response = await fetch(urlHeadline);
         const data = await response.json();
-        console.log(data.results);
+        // console.log(data.results);
         const results = data.results;
-        console.log(results);
+        // console.log(results);
 
         displayNews(results);
 
@@ -36,15 +36,15 @@ const techNewsBtn = document.querySelector('#tech-news');
 techNewsBtn.addEventListener('click', fetchTechNews)
 
 async function fetchTechNews() {
-    console.log('test tech')
+    // console.log('test tech')
     clearNoResults();
     
     try {
         const response = await fetch(urlTech);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         const results = data.results;
-        console.log(results);
+        // console.log(results);
         displayNews(results)
     } catch(error) {
         console.error(`Fetch Error MK`, error)
@@ -56,15 +56,15 @@ const scienceNewsBtn = document.querySelector('#science-news');
 scienceNewsBtn.addEventListener('click', fetchScienceNews)
 
 async function fetchScienceNews() {
-    console.log('test science');
+    // console.log('test science');
     clearNoResults();
 
     try {
         const response = await fetch(urlScience);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         const results = data.results;
-        console.log(results);
+        // console.log(results);
         displayNews(results);
     } catch(error) {
         console.error('There was an error!', error)
@@ -78,15 +78,15 @@ const healthNewsBtn = document.querySelector('#health-news');
 healthNewsBtn.addEventListener('click', fetchHealthNews);
 
 async function fetchHealthNews() {
-    console.log('test health');
+    // console.log('test health');
     clearNoResults();
 
     try {
         const response = await fetch(urlHealth);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         const results = data.results;
-        console.log(results);
+        // console.log(results);
         displayNews(results);
     } catch {
         console.error('There was an error!', error)
@@ -121,9 +121,9 @@ async function fetchQueryNews(queryUrl) {
     try {
         const response = await fetch(queryUrl);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         const results = data.results;
-        console.log(results);
+        // console.log(results);
         clearNoResults();
         displayNews(results);
     } catch(error) {
@@ -157,7 +157,7 @@ function displayNews(results) {
 
             if (!result.image_url) {
                 img.src = placeholderImage;
-                console.log('placeholder image')
+                // console.log('placeholder image')
             } else {
                 img.src = result.image_url
             }
@@ -169,7 +169,7 @@ function displayNews(results) {
             try {
                 description.textContent = `${result.description.slice(0, 120)}...`;
             } catch(error) {
-                console.log('MK description error', error)
+                console.error('MK description error', error)
             }
 
             anchor.textContent = 'Read More';
@@ -185,17 +185,17 @@ function displayNews(results) {
 
             newsDiv.appendChild(articleDiv);
 
-            console.log(result.image_url);
-            console.log(result.title);
-            console.log(result.description)
+            // console.log(result.image_url);
+            // console.log(result.title);
+            // console.log(result.description)
         } catch(error) {
-            console.log('Card build error', error)
+            console.error('Card build error', error)
         }
     }
         
 
     if(results.length === 0) {
-            console.log('test');
+            // console.log('test');
         const noResultsMessage = document.createElement('h3');
         noResultsMessage.textContent = 'No articles found...';
         noResultsDiv.appendChild(noResultsMessage);

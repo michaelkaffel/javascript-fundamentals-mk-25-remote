@@ -64,14 +64,14 @@ function buildList() {
 }
 
 function resetList() {
-    if (shopListArray.length === 0) {
-        return false
-    } else {
+    // if (shopListArray.length === 0) {
+    //     return false
+    // } else {
         while (shoppingList.firstChild) {
             shoppingList.removeChild(shoppingList.firstChild)
         }
     }
-}
+// }
 
 function removeItem(event) {
     const li = event.currentTarget.closest('li');
