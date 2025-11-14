@@ -82,9 +82,11 @@ async function startGame() {
 
     // remove/add buttons update instructions
     questionBtn.style.display = "inline";
-    answerBtn.style.display = "inline";
+    answerBtn.style.display = "none";
     startGameBtn.style.display = "none";
     questionDiv.textContent = 'Press "Enter" or click "New Question" to proceed.';
+    category.disabled = true;
+    difficulty.disabled = true;
 
 
 
@@ -119,9 +121,13 @@ function newQuestion() {
 
     answerDiv.value = "";
     output.style.border = "";
+    questionBtn.style.display = "none";
+    answerBtn.style.display = "inline";
 
     if (index === 19) {
         answerBtn.style.display = 'none';
+        questionBtn.style.display = "inline";
+        answerDiv
         questionBtn.textContent = 'Reset Game'
         questionBtn.removeEventListener('click', newQuestion);
         questionBtn.addEventListener('click', () => {
@@ -130,6 +136,7 @@ function newQuestion() {
         output.innerHTML = `Great Job! You answered ${points} correctly questions out 20 questions!\nTry again?`;
         questionDiv.textContent = 'Refresh to try another round.';
         answerDiv.placeholder = "";
+        answerDiv.disabled = true;
         return;
     }
 
@@ -160,6 +167,8 @@ answerBtn.addEventListener('click', submitAnswer)
 function submitAnswer() {
     window.removeEventListener('keydown', handleAnswerEnter);
     window.addEventListener('keydown', handleQuestionEnter);
+    questionBtn.style.display = "inline";
+    answerBtn.style.display = "none";
     count++;
 
     userAnswer = answerDiv.value.trim().toLowerCase();

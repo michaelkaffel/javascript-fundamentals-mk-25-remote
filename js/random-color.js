@@ -1,8 +1,7 @@
 
 const colorBtn = document.getElementById('colorBtn');
 colorBtn.addEventListener('click', changeColor)
-colorBtn.addEventListener('mouseover', btnColorChange)
-colorBtn.addEventListener('mouseout', btnColorChangeBack)
+
 
 const resetBtn = document.getElementById('resetBtn');
 resetBtn.addEventListener('click', resetColor)
@@ -33,13 +32,6 @@ function resetColor() {
      document.getElementById('colorCode').innerHTML = "#FFFFFF";
 }
 
-function btnColorChange () {
-    colorBtn.style.backgroundColor = "blue";
-}
-
-function btnColorChangeBack () {
-    colorBtn.style.backgroundColor = "buttonface";
-}
 
 
 

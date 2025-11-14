@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -24,24 +20,113 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 
+    <title>Make A List</title>
 
-    <title>Shopping List App</title>
-    
-</head>
-<body>
-    <h1>My Shopping List</h1>
-    <form id="myForm">
-        <label for="item">Add an item:</label>
-        <input id="item" type="text" name="item">
-        <button onclick="getItem()">Add</button>
-    </form>
-    <ul id="shoppingList">
-        <!-- list items will go into this ul via DOM manipulation -->
-    </ul>
-    <button type="button" id="print" onclick="print()">Print</button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/shopping-list.js">
+
+    <style>
+        #shoppingList {
+            list-style-type: none;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .shopping-list-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #E46F5A;
+            min-width: 25rem;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 7px;
+            color: #FDF2EF;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            transition: transform .5s;
+
+
+        }
+
+        .shopping-list-item:hover {
+            background-color: #CC5E4D;
+            transform: translate(0, -5px);
+
+        }
+
+        .close {
+            cursor: pointer;
+        }
         
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success" href="index.html">JavaScript Fundamentals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news-app.html">News App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trivia.html">Trivia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exercise Content -->
+    <div class="exercise-container">
+        <h1 class="h1-exercise">📋 Make A List!</h1>
+
+        <h2 class="h2-exercise">Groceries, ToDo's, & Planning</h2>
+        <p>Add items to the list using the button below. Click on an item to DELETE it.</p>
+
+        <form id="myForm" class="d-flex">
+
+            <input class="form-control" id="item" type="text" name="item" placeholder="Add an item">
+            <button class="btn btn-success ms-3" type="submit">Add</button>
+        </form>
+
+        <div class="text-center mt-4">
+
+        </div>
+
+        <ul id="shoppingList">
+
+        </ul>
+    </div>
+
+   
+
+    <!-- 
+    <h1>Make A List!</h1>
+    <p>Add items to the list using the button below. Click on an item to DELETE it.</p>
+    <form id="myForm">
+        <label class="form-label" for="item">Add an item:</label>
+        <input class="form-control" id="item" type="text" name="item">
+        <button type="submit">Add</button>
+    </form>
+
+    <ul id="shoppingList">
+       
+    </ul> -->
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./js/shopping-list.js" type="module">
+
     </script>
 </body>
+
 </html>

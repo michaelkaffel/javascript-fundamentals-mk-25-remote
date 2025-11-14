@@ -204,3 +204,17 @@ div.game>img {
 #answerBtn {
   display: none;
 }
+
+.h1-trivia {
+  text-align: center;
+}
+
+.hero-trivia {
+  background-image: url(../images/trivia-hero.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+  height: 500px;
+}
